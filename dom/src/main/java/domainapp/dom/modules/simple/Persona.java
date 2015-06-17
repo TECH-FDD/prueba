@@ -137,6 +137,19 @@ public abstract class Persona {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
+
+
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido
+				+ ", nroDocumento=" + nroDocumento + ", fechaNacimiento="
+				+ fechaNacimiento + ", domicilio=" + domicilio
+				+ ", codigoPostal=" + codigoPostal + ", fechaAlta=" + fechaAlta
+				+ ", telefono=" + telefono + ", email=" + email + "]";
+	}
+	public String eliminarEmpleado(){
+		return "El Empleado ha sido eliminado de manera exitosa!";
+	}
 
 }
